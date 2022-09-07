@@ -44,23 +44,26 @@ nav.navbar.scrolled{
   padding: 0px 0;
   background-color: #121212;
 }
-nav.navbar a.navbar.Brand{
+nav.navbar a.navbar-brand{
   width: 9%;
 }
-nav.navbar .navbar-nav .nav-link.navbar-link{
+nav.navbar a.navbar-brand img{
+  width: 70%;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link{
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0.25px;
+  padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link:active{
+nav.navbar .navbar-nav a.nav-link.navbar-link.active{
   opacity: 1;
 }
-span.navbar-text{
-  display: flex;
+span.navbar_text{
+  display: flex ;
   align-items: center;
 }
 .social-icon{
@@ -93,12 +96,12 @@ span.navbar-text{
   transform: scale(1);
 }
 .social-icon a img{
-  width: 40%;
+  width: 60%;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img{
-  filter: brightness(0) saturate(100%) invert(7%) saturate(98%) hue-rotate(346deg) brightness(5);
+  filter: brightness(0) saturate(100%) invert(7%) saturate(98%) hue-rotate(346deg) brightness(0);
 }
 .navbar_text button{
   font-weight: 700;
@@ -122,6 +125,8 @@ span.navbar-text{
   background-color: #fff;
   left: 0;
   top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
 }
 .navbar_text button:hover{
   color: #121212;
