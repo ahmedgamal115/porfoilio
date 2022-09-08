@@ -3,10 +3,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState , useEffect } from 'react';
 import logo from '../assets/images/icons8-smartcash-100.png'
-import facebook from '../assets/images/icons8-facebook-f-100 (1).png'
+import facebook from '../assets/images/facebook.png'
 import tiwitter from '../assets/images/icons8-twitter-100.png'
-import instagram from '../assets/images/icons8-instagram-100.png'
-import whatsapp from '../assets/images/icons8-whatsapp-100.png'
+import instagram from '../assets/images/instagram.png'
+import whatsapp from '../assets/images/whatsapp.png'
 
 const BasicExample = () => {
     const [activeLink , setActiveLink] = useState('Home')
