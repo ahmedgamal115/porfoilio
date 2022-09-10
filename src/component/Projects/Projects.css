@@ -74,7 +74,7 @@
     position: relative;
     border-radius: 30px;
     overflow: hidden;
-    margin:24px 0px 24px 0px;
+    margin-bottom:24px;
 }
 .proj-imgbx img{
     width: 100%;
