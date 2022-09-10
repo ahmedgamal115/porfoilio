@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorshape from '../../assets/images/wallpaperflare.com_wallpaper.jpg'
 import './Skills.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Skills = () => {
     const skillsValues = [60, 80, 90]
@@ -26,7 +27,7 @@ const Skills = () => {
         }
       };
   return (
-    <section className="skill" id="skills">
+    <section className="skill" id="Skills">
         <Container>
             <Row>
                 <Col>
@@ -40,17 +41,17 @@ const Skills = () => {
                                 <div className="prograss">
                                     <div className="outer">
                                         <div className="inner">
-                                            {skillsValues[0]}
+                                            {skillsValues[0]} %
                                         </div>
                                     </div>
-                                    <svg width={100} height={100}>
+                                    <svg width={160} height={160}>
                                         <defs>
-                                            <linearGradient>
+                                            <linearGradient id="grandientColor">
                                                 <stop offset={0} stopColor="#e91e63"/>
                                                 <stop offset={100} stopColor="#673ab7"/>
                                             </linearGradient>
                                         </defs>
-                                        <circle cy={50} cx={50} r={40}/>
+                                        <circle cy={80} cx={80} r={65} strokeDashoffset="160"/>
                                     </svg>
                                 </div>
                                 <h5>Web Design</h5>
@@ -59,17 +60,17 @@ const Skills = () => {
                                 <div className="prograss">
                                     <div className="outer">
                                         <div className="inner">
-                                            {skillsValues[1]}
+                                            {skillsValues[1]} %
                                         </div>
                                     </div>
-                                    <svg width={100} height={100}>
+                                    <svg width={160} height={160}>
                                         <defs>
                                             <linearGradient>
                                                 <stop offset={0} stopColor="#e91e63"/>
                                                 <stop offset={100} stopColor="#673ab7"/>
                                             </linearGradient>
                                         </defs>
-                                        <circle cy={50} cx={50} r={40}/>
+                                        <circle cy={80} cx={80} r={65} strokeDashoffset="80"/>
                                     </svg>
                                 </div>
                                 <h5>Web Developer</h5>
@@ -78,17 +79,17 @@ const Skills = () => {
                                 <div className="prograss">
                                     <div className="outer">
                                         <div className="inner">
-                                            {skillsValues[2]}
+                                            {skillsValues[2]} %
                                         </div>
                                     </div>
-                                    <svg width={100} height={100}>
+                                    <svg width={160} height={160}>
                                         <defs>
                                             <linearGradient>
                                                 <stop offset={0} stopColor="#e91e63"/>
                                                 <stop offset={100} stopColor="#673ab7"/>
                                             </linearGradient>
                                         </defs>
-                                        <circle cy={50} cx={50} r={40}/>
+                                        <circle cy={80} cx={80} r={65} strokeDashoffset="40"/>
                                     </svg>
                                 </div>
                                 <h5>Embedded System</h5>

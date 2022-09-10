@@ -21,9 +21,42 @@
     margin: 14px 0 75px 0;
 }
 .skill-slider{
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 21px auto;
     position: relative;
+}
+.skill-slider .item{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.skill-slider .prograss{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.skill-slider .prograss .outer{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgb(255 0 0 / 15%), 
+    -6px -6px 10px -1px rgb(255 255 255 / 7%);
+    padding: 20%;
+    
+}
+.skill-slider .prograss .inner{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: inset 6px 6px 10px -1px rgb(255 0 0 / 15%), 
+                inset -6px -6px 10px -1px rgb(255 255 255 / 7%),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 20px;
 }
 .background-image-left{
     position: absolute;
@@ -31,4 +64,16 @@
     bottom: 0;
     width: 40%;
     z-index: -4;
+}
+.skill-slider .prograss svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.skill-slider .prograss svg circle{
+    fill: none;
+    stroke: url(#grandientColor);
+    stroke-linecap: round;
+    stroke-width: 28px;
+    stroke-dasharray: 400;
 }
