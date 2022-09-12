@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { Col, Container, Row } from "react-bootstrap"
+import './Contact.css'
+import contectUs from '../../assets/images/—Pngtree—modern flat design concept of_5332895.png'
 const Contact = () => {
     const formInitialDetails = {
         firstName:'',
@@ -19,16 +21,31 @@ const Contact = () => {
         })
     }
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = async (e) =>{
         e.preventDefault();
+        setButtonText('Sending....')
+        let reponse = await fetch("http://localhost:5000/Contect",{
+            method: "POST",
+            headers:{
+                "Content-Type":"Application/json;charset=utf-8"
+            },
+            body: JSON.stringify(formDetails)
+        });
+        setButtonText('Send')
+        let result = reponse.status;
+        setFormDetails(formInitialDetails);
+        if(result === 200){
+            setStatus({success: true, massage: "Massage Sent Successfully"})
+        }else{
+            setStatus({success: false, massage: "Somethings wrong"})
+        }
     }
 
   return (
     <section className="Contact" id="connect">
-        <Container>
             <Row className="align-item-center">
                 <Col md={6}>
-                    <img src="" alt="Contact Us" />
+                    <img src={contectUs} alt="Contact Us" />
                 </Col>
                 <Col md={6}>
                     <h2>Get In Touch</h2>
@@ -52,15 +69,14 @@ const Contact = () => {
                             </Col>
                             {
                                 status.massage &&
-                                <col>
+                                <Col>
                                     <p className={status.success === false ? "danger" : "success"}>{status.massage}</p>
-                                </col>
+                                </Col>
                             }
                         </Row>
                     </form>
                 </Col>
             </Row>
-        </Container>
     </section>
   )
 }

@@ -3,6 +3,9 @@ import Projectcard from './Projectcard'
 import img1 from '../../assets/images/Landing Page.jpg'
 import img2 from '../../assets/images/Todolist.jpg'
 import img3 from '../../assets/images/Weather app.jpg'
+import img4 from '../../assets/images/img4 (1).jpg'
+import img5 from '../../assets/images/img4 (2).jpg'
+import img6 from '../../assets/images/img6.jpg'
 import './Projects.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -22,7 +25,23 @@ const Projects = () => {
             title: 'Weather API App',
             describtion: 'First Page in Web Site',
             imgURL: img3
+        },
+        {
+            title: 'Custom Project',
+            describtion: 'The standard Lorem Ipsum passage, used since the 1500s',
+            imgURL: img4
+        },
+        {
+            title: 'Custom Project',
+            describtion: 'The standard Lorem Ipsum passage, used since the 1500s',
+            imgURL: img5
+        },
+        {
+            title: 'Custom Project',
+            describtion: 'The standard Lorem Ipsum passage, used since the 1500s',
+            imgURL: img6
         }
+
     ]
   return (
     <div>
