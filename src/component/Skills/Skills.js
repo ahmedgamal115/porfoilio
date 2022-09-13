@@ -4,9 +4,11 @@ import "react-multi-carousel/lib/styles.css";
 import colorshape from '../../assets/images/wallpaperflare.com_wallpaper.jpg'
 import './Skills.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { useEffect, useState } from "react";
 
 const Skills = () => {
     const skillsValues = [60, 80, 90]
+    const [animation,setAnimation] = useState(false)
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.
@@ -26,6 +28,16 @@ const Skills = () => {
           items: 1
         }
       };
+    useEffect(()=>{
+        
+        window.onscroll = function(){
+            if(window.scrollY >= document.querySelector('.skill').offsetTop){
+                setAnimation(true)
+            }
+        }
+        
+    },[])
+
   return (
     <section className="skill" id="Skills">
         <Container>
