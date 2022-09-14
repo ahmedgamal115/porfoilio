@@ -31,8 +31,10 @@ const Skills = () => {
     useEffect(()=>{
         
         window.onscroll = function(){
-            if(window.scrollY >= document.querySelector('.skill').offsetTop){
+            if(window.scrollY >= document.querySelector('.skill').offsetTop - 300){
                 setAnimation(true)
+            }else{
+                setAnimation(false)
             }
         }
         
@@ -63,7 +65,7 @@ const Skills = () => {
                                                 <stop offset={100} stopColor="#673ab7"/>
                                             </linearGradient>
                                         </defs>
-                                        <circle cy={80} cx={80} r={65} strokeDashoffset="160"/>
+                                        <circle cy={80} cx={80} r={65} strokeDashoffset={animation ? "160" : "400"}/>
                                     </svg>
                                 </div>
                                 <h5>Web Design</h5>
@@ -82,7 +84,7 @@ const Skills = () => {
                                                 <stop offset={100} stopColor="#673ab7"/>
                                             </linearGradient>
                                         </defs>
-                                        <circle cy={80} cx={80} r={65} strokeDashoffset="80"/>
+                                        <circle cy={80} cx={80} r={65} strokeDashoffset={animation ? "80" : "400"}/>
                                     </svg>
                                 </div>
                                 <h5>Web Developer</h5>
@@ -101,7 +103,7 @@ const Skills = () => {
                                                 <stop offset={100} stopColor="#673ab7"/>
                                             </linearGradient>
                                         </defs>
-                                        <circle cy={80} cx={80} r={65} strokeDashoffset="40"/>
+                                        <circle cy={80} cx={80} r={65} strokeDashoffset={animation ? "40" : "400"}/>
                                     </svg>
                                 </div>
                                 <h5>Embedded System</h5>
