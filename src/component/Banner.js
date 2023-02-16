@@ -44,7 +44,11 @@ const Banner = () => {
                 <Col xs={12} md={6} xl={7}>
                     <span className='tagline'>Welcome to my page</span>
                     <h1>{`Hi I'am `} <span className='wrap'>{text}</span></h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>
+                    Web Developer with experience in React, Node.js, Arduino, HTML, CSS, JavaScript, SQL, Oracle Database, MongoDB, SQL Server, Java, C++, ASP.NET and Python would be considered a stack developer with a wide range of skills.
+                    <br/>
+                    I am proficient in front end development using HTML, CSS and JavaScript, with a strong focus on React to build interactive and responsive user interfaces. I'm also skilled in server-side programming using Node.js, with knowledge of back-end frameworks like Express.js and Socket.io.
+                    </p>
                     <button onClick={()=>{console.log('Connect')}}>Let's connect <ArrowRightCircle size={25}/></button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>

@@ -2,9 +2,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState , useEffect } from 'react';
-import logo from '../assets/images/icons8-smartcash-100.png'
+import logo from '../assets/images/logo_1.png'
 import facebook from '../assets/images/facebook.png'
-import tiwitter from '../assets/images/icons8-twitter-100.png'
+import github from '../assets/images/icons8-github-96.png'
 import instagram from '../assets/images/instagram.png'
 import whatsapp from '../assets/images/whatsapp.png'
 
@@ -46,10 +46,10 @@ const BasicExample = () => {
           </Nav>
           <span className='navbar_text'>
             <div className='social-icon'>
-                <a href="#"><img src={facebook} alt="facebook" /></a>
-                <a href="#"><img src={tiwitter} alt="tiwitter" /></a>
-                <a href="#"><img src={instagram} alt="instagram" /></a>
-                <a href="#"><img src={whatsapp} alt="whatsapp" /></a>
+                <a href="https://www.facebook.com/profile.php?id=100008686094491&mibextid=ZbWKwL"><img src={facebook} alt="facebook" /></a>
+                <a href="https://instagram.com/ahmed_gamal_emam_?igshid=YmJhNjkzNzY="><img src={instagram} alt="instagram" /></a>
+                <a href="https://wa.me/qr/E5LK3J7H24XFM1"><img src={whatsapp} alt="whatsapp" /></a>
+                <a href="https://github.com/ahmedgamal115"><img src={github} alt="github" /></a>
             </div>
             <button className='connent_btn' onClick={()=>{console.log('Connect')}}><span>let's connect</span></button>
           </span>

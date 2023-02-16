@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { useEffect, useState } from "react";
 
 const Skills = () => {
-    const skillsValues = [60, 80, 90]
+    const skillsValues = [100, 100, 70, 40, 90]
     const [animation,setAnimation] = useState(false)
     const responsive = {
         superLargeDesktop: {
@@ -49,7 +49,7 @@ const Skills = () => {
                         <h2>
                             Skills
                         </h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p> Web Developer with experience in React, Node.js, Arduino, HTML, CSS, JavaScript, SQL, Oracle Database, MongoDB, SQL Server, Java, C++, ASP.NET and Python</p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
                                 <div className="prograss">
@@ -65,10 +65,10 @@ const Skills = () => {
                                                 <stop offset={100} stopColor="#673ab7"/>
                                             </linearGradient>
                                         </defs>
-                                        <circle cy={80} cx={80} r={65} strokeDashoffset={animation ? "160" : "400"}/>
+                                        <circle cy={80} cx={80} r={65} strokeDashoffset={animation ? "0" : "400"}/>
                                     </svg>
                                 </div>
-                                <h5>Web Design</h5>
+                                <h5>Front end</h5>
                             </div>
                             <div className="item">
                                 <div className="prograss">
@@ -84,10 +84,48 @@ const Skills = () => {
                                                 <stop offset={100} stopColor="#673ab7"/>
                                             </linearGradient>
                                         </defs>
-                                        <circle cy={80} cx={80} r={65} strokeDashoffset={animation ? "80" : "400"}/>
+                                        <circle cy={80} cx={80} r={65} strokeDashoffset={animation ? "0" : "400"}/>
                                     </svg>
                                 </div>
-                                <h5>Web Developer</h5>
+                                <h5>Back end</h5>
+                            </div>
+                            <div className="item">
+                                <div className="prograss">
+                                    <div className="outer">
+                                        <div className="inner">
+                                            {skillsValues[3]} %
+                                        </div>
+                                    </div>
+                                    <svg width={160} height={160}>
+                                        <defs>
+                                            <linearGradient>
+                                                <stop offset={0} stopColor="#e91e63"/>
+                                                <stop offset={100} stopColor="#673ab7"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cy={80} cx={80} r={65} strokeDashoffset={animation ? "240" : "400"}/>
+                                    </svg>
+                                </div>
+                                <h5>Python</h5>
+                            </div>
+                            <div className="item">
+                                <div className="prograss">
+                                    <div className="outer">
+                                        <div className="inner">
+                                            {skillsValues[4]} %
+                                        </div>
+                                    </div>
+                                    <svg width={160} height={160}>
+                                        <defs>
+                                            <linearGradient>
+                                                <stop offset={0} stopColor="#e91e63"/>
+                                                <stop offset={100} stopColor="#673ab7"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cy={80} cx={80} r={65} strokeDashoffset={animation ? "40" : "400"}/>
+                                    </svg>
+                                </div>
+                                <h5>Database</h5>
                             </div>
                             <div className="item">
                                 <div className="prograss">
@@ -103,10 +141,10 @@ const Skills = () => {
                                                 <stop offset={100} stopColor="#673ab7"/>
                                             </linearGradient>
                                         </defs>
-                                        <circle cy={80} cx={80} r={65} strokeDashoffset={animation ? "40" : "400"}/>
+                                        <circle cy={80} cx={80} r={65} strokeDashoffset={animation ? "120" : "400"}/>
                                     </svg>
                                 </div>
-                                <h5>Embedded System</h5>
+                                <h5>Arduino</h5>
                             </div>
                         </Carousel>
                     </div>

@@ -3,9 +3,9 @@ import Projectcard from './Projectcard'
 import img1 from '../../assets/images/Landing Page.jpg'
 import img2 from '../../assets/images/Todolist.jpg'
 import img3 from '../../assets/images/Weather app.jpg'
-import img4 from '../../assets/images/img4 (1).jpg'
-import img5 from '../../assets/images/img4 (2).jpg'
-import img6 from '../../assets/images/img6.jpg'
+import img4 from '../../assets/images/how-ecommerce-works.png'
+import img5 from '../../assets/images/toolbox.jpg'
+import img6 from '../../assets/images/images.jpg'
 import './Projects.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -13,32 +13,26 @@ const Projects = () => {
     const Project = [
         {
             title: 'Landing Page',
-            describtion: 'First Page in Web Site',
             imgURL: img1
         },
         {
             title: 'Todo List Application',
-            describtion: 'First Page in Web Site',
             imgURL: img2
         },
         {
             title: 'Weather API App',
-            describtion: 'First Page in Web Site',
             imgURL: img3
         },
         {
-            title: 'Custom Project',
-            describtion: 'The standard Lorem Ipsum passage, used since the 1500s',
+            title: 'e-commerce Project',
             imgURL: img4
         },
         {
-            title: 'Custom Project',
-            describtion: 'The standard Lorem Ipsum passage, used since the 1500s',
+            title: 'Toolbox Project',
             imgURL: img5
         },
         {
-            title: 'Custom Project',
-            describtion: 'The standard Lorem Ipsum passage, used since the 1500s',
+            title: 'GYM system Project',
             imgURL: img6
         }
 
@@ -49,17 +43,11 @@ const Projects = () => {
         <Row>
             <Col>
                 <h1>Projects</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>I have created many projects that showcase my skills and knowledge, demonstrating the ability to work with different technologies and languages to create innovative and effective solutions. With such a wide range of skills, with these qualifications I will be well placed to take on a variety of web development roles, from front end development to full development to database administration.</p>
                 <Tab.Container className="projects-tabs" defaultActiveKey='First'>
                     <Nav variant="pills" className='nav-pills mb-5 justify-content-center align-items-center' id="pills-tab">
                     <Nav.Item>
-                        <Nav.Link eventKey="First">Tab one</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="Second">Tab two</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="Third">Tab three</Nav.Link>
+                        <Nav.Link eventKey="First">Page 1</Nav.Link>
                     </Nav.Item>
                     </Nav>
                     <Tab.Content>
